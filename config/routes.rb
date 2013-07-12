@@ -1,4 +1,9 @@
 ChoiceLinks::Application.routes.draw do
+
+  root :to => 'webpages#index'
+
+  resources :webpages
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
