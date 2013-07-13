@@ -18,9 +18,9 @@ feature 'Creating Webpages' do
     find("title").should have_content(title)
   end
 
-#  scenario "can not create a project without a name" do
-#    click_button 'Create Webpage'
-#    page.should have_content("Your awesome link hasn't been created.")
-#    page.should have_content("Name can't be blank")
-#  end
+  scenario "can not create a project without a name" do
+    click_button 'Create Webpage'
+    page.should have_content("Your awesome link hasn't been created.")
+    page.should have_content("Name can't be blank")
+  end
 end
