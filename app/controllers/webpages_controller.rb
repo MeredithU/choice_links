@@ -11,10 +11,11 @@ class WebpagesController < ApplicationController
   def create
     @webpage = Webpage.new(params[:webpage])
     if @webpage.save
-      flash[:notice] = "My awesome link has been created."
+      flash[:notice] = "Your awesome link has been created."
       redirect_to @webpage
     else
-      #tbd
+      flash[:alert] = "Your awesome link hasn't been created."
+      render :action => "new"
     end
   end
 
