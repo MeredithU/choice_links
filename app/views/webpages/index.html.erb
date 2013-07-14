@@ -1,8 +1,22 @@
-<%= link_to "New Link", new_webpage_path %>
+<h2>My Fav Links</h2>
 
-<h2>Webpages</h2>
-<ul>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Link</th>
+  </tr>
+
   <% @webpages.each do |webpage| %>
-    <li><%= link_to webpage.name, webpage %></li>
+    <tr>
+      <td><%= link_to webpage.name, webpage %></td>
+      <td><%= webpage.link %></td>
+    </tr>
   <% end %>
-</ul>
+
+
+</table>
+
+<br />
+<br />
+
+<%= link_to "New Link", new_webpage_path %>
