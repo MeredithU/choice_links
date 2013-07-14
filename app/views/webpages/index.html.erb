@@ -1,1 +1,8 @@
 <%= link_to "New Link", new_webpage_path %>
+
+<h2>Webpages</h2>
+<ul>
+  <% @webpages.each do |webpage| %>
+    <li><%= link_to webpage.name, webpage %></li>
+  <% end %>
+</ul>
