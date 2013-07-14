@@ -1,7 +1,7 @@
 class WebpagesController < ApplicationController
 
   def index
-    @webpages = Webpage.all
+    @webpages = Webpage.order("id").reverse
   end
 
   def new
