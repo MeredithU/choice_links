@@ -6,7 +6,7 @@ feature "Editing Webpages" do
     Factory(:webpage, :name => "My Site")
     visit "/"
     click_link "My Site"
-    click_link "Edit Webpage"
+    click_link "Edit Link"
   end
 
   scenario "Updating a webpage" do

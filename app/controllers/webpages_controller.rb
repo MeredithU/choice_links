@@ -38,6 +38,13 @@ class WebpagesController < ApplicationController
     end
   end
 
+  def destroy
+    @webpage = Webpage.find(params[:id])
+    @webpage.destroy
+    flash[:notice] = "Your awesome link has been deleted."
+    redirect_to webpages_path
+  end
+
 end
 
 
