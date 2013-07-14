@@ -23,4 +23,35 @@ class WebpagesController < ApplicationController
     @webpage = Webpage.find(params[:id])
   end
 
+  def edit
+    @webpage = Webpage.find(params[:id])
+  end
+
+  def update
+    @webpage = Webpage.find(params[:id])
+    if @webpage.update_attributes(params[:webpage])
+      flash[:notice] = "Your awesome link has been updated."
+      redirect_to @webpage
+    else
+      flash[:alert] = "Your awesome link has not been updated."
+      render :action => "edit"
+    end
+  end
+
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

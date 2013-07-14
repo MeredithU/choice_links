@@ -1,0 +1,15 @@
+<%= form_for(@webpage) do |f| %>
+<%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </p>
+
+  <%= f.submit %>
+
+<% end %>
