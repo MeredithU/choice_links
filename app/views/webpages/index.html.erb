@@ -4,12 +4,14 @@
   <tr>
     <th>Name</th>
     <th>Link</th>
+    <th>Saved On</th>
   </tr>
 
   <% @webpages.each do |webpage| %>
     <tr>
       <td><%= link_to webpage.name, webpage %></td>
       <td><%= webpage.link %></td>
+      <td><%= webpage.created_at.to_s(:saved_on) %></td>
     </tr>
   <% end %>
 
