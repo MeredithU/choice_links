@@ -1,15 +1,6 @@
-<%= form_for(@webpage) do |f| %>
+<%= simple_form_for @webpage do |f| %>
 <%= f.error_messages %>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-
-  <p>
-    <%= f.label :link %><br />
-    <%= f.text_field :link %>
-  </p>
-
-  <%= f.submit %>
-
+  <%= f.input :name, label: 'URL Name' %>
+  <%= f.input :link, label: 'URL' %>
+  <%= f.submit 'Save' %>
 <% end %>
