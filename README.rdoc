@@ -1,3 +1,6 @@
 == Code Fellows Assignment
 
-An app where I can save my fav links.
+An app that saves helpful links that I've come across.
+
+I also implemented the simple form gem, timezones and formatted on how the date is displayed.
+
