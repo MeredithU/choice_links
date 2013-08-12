@@ -1,1 +1,5 @@
-A microapp that displays helpful links that I come across.
+== Code Fellows Assignment
+
+An app that saves helpful links that I've come across.
+
+I also implemented the simple form gem, timezones and formatted on how the date is displayed.

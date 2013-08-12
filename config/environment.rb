@@ -6,4 +6,4 @@ ChoiceLinks::Application.initialize!
 
 
 # Date format
-Time::DATE_FORMATS[:saved_on] = "%a, %B %e, %Y"
+Time::DATE_FORMATS[:saved_on] = "%a, %b %e, %Y at %I:%M %p %Z"
